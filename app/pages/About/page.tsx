@@ -6,7 +6,7 @@ import {
   FaLinkedin,
   FaTiktok,
 } from "react-icons/fa";
-
+// chang
 const About = () => {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-between px-8 py-16">

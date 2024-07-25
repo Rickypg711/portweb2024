@@ -48,7 +48,7 @@ export default function Contact() {
           />
           <button
             type="submit"
-            className="bg-white text-black py-2 px-4 rounded-md text-lg font-semibold transition-all hover:bg-gray-200"
+            className="bg-white text-black py-2 px-4 rounded-md text-lg font-semibold transition-all hover:bg-gray-200 mb-8"
           >
             Send Message
           </button>

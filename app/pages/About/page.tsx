@@ -7,44 +7,47 @@ import {
   FaTiktok,
 } from "react-icons/fa";
 
-export default function Home() {
+const About = () => {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-between px-8 py-16">
-      {/* Hero Section */}
+      {/* Content Section */}
       <div className="text-center max-w-4xl">
-        <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6">
-          Ricardo Paredes
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          About Me
         </h1>
-        <p className="text-xl md:text-2xl lg:text-3xl mb-8">
-          Bridging Technology and Creativity to Empower Your Digital Presence
+        <p className="text-lg md:text-xl lg:text-2xl mb-8">
+          Hi, I&apos;m Ricardo Paredes, a passionate professional bridging
+          technology and creativity. With a background in full-stack
+          development, digital marketing, and cybersecurity, I am dedicated to
+          helping individuals and businesses thrive in the digital era.
+        </p>
+        <p className="text-lg md:text-xl lg:text-2xl mb-8">
+          My journey began with a deep fascination for technology and its
+          potential to solve real-world problems. Over the years, I&apos;ve
+          honed my skills in various domains, from web development to ethical
+          hacking, always driven by a desire to learn and grow.
+        </p>
+        <p className="text-lg md:text-xl lg:text-2xl mb-8">
+          I believe in the power of creativity and technology to transform
+          lives. Whether it&apos;s through building innovative solutions,
+          optimizing digital strategies, or exploring new ways to engage with
+          technology, I am committed to making a positive impact.
         </p>
         <Link
-          href="/About"
+          href="/pages/Contact"
           className="bg-white text-black py-2 px-4 rounded-md text-lg font-semibold transition-all hover:bg-gray-200"
         >
-          Learn More About Me
+          Get In Touch
         </Link>
       </div>
 
-      {/* Navigation Links */}
-      <div className="flex flex-col items-center space-y-4">
+      {/* Back to Home Link */}
+      <div className="flex flex-col items-center space-y-4 mt-8">
         <Link
-          href="pages/About"
+          href="/"
           className="text-lg md:text-xl lg:text-2xl font-medium transition-all hover:text-gray-400"
         >
-          About
-        </Link>
-        <Link
-          href="/projects"
-          className="text-lg md:text-xl lg:text-2xl font-medium transition-all hover:text-gray-400"
-        >
-          Projects
-        </Link>
-        <Link
-          href="pages/Contact"
-          className="text-lg md:text-xl lg:text-2xl font-medium transition-all hover:text-gray-400"
-        >
-          Contact
+          Back to Home
         </Link>
       </div>
 
@@ -93,4 +96,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default About;
